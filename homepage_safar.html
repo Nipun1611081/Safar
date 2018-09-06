@@ -214,7 +214,7 @@ input
       </div> 
 
     <div class= "panel panel-body">
-<form id="form1">
+<form id="form1" action="#" method="POST">
     <div class="form-group has-feedback">
     <label for="name">Name:</label>
     <input type="text" class="form-control" id= "name" placeholder="Name">
@@ -237,15 +237,15 @@ input
   </div>
 
 <label class="container">Male
-  <input type="radio" checked="checked" name="radio">
+  <input type="radio" checked="checked" name="radio" id="gender">
   <span class="checkmark"></span>
 </label>
 <label class="container">Female
-  <input type="radio" name="radio">
+  <input type="radio" name="radio" id="gender">
   <span class="checkmark"></span>
 </label>
 <label class="container">Other
-  <input type="radio" name="radio">
+  <input type="radio" name="radio" id="gender">
   <span class="checkmark"></span>
 </label>
 
@@ -254,7 +254,7 @@ input
   <span class="checkmarks"></span>
 </label>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button name="add" type="submit" value="save" class="btn btn-primary">Submit</button>
   </form>
   </div>
 </div>
@@ -364,6 +364,32 @@ input
 
 <!-- footer ends -->   
  
+ <?php
+if ($_POST['add'] =='save')
+{
+$server="localhost";
+$username="root";
+$password="";
+$db="safar";
+$conn = mysqli_connect($server,$username,$password,$db);
+if(!$conn){
+    die("Connection failed".mysqli_connect_error());
+}
+else
+{
+$name= $_POST["name"];
+$email= $_POST["email"];
+$locality= $_POST["locality"];
+$gender= $_POST["gender"];
+$sql="INSERT INTO customer(name,email,locality,gender) VALUES ('".$name."','".$email."','".$locality."','".$gender."')";
+if (conn->query($sql))
+{
+echo "<script> alert('Account created') </script>";
+}
+}
+}
+ ?>
+
 
 </body>
 </html>
