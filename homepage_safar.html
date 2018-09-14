@@ -167,11 +167,11 @@ input
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 </style>
 </head>
 <body>
-<!--header-->
+
+<!--navbar-->
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
       <div class= "navbar-header">
@@ -249,7 +249,7 @@ input
   <span class="checkmark"></span>
 </label>
 
-<label class="container">I accept to the terms and conditions
+<label required class="container">I accept to the terms and conditions
   <input type="checkbox">
   <span class="checkmarks"></span>
 </label>
@@ -364,14 +364,14 @@ input
 
 <!-- footer ends -->   
  
- <?php
-if ($_POST['add'] =='save')
+  <?php
+if (isset($_POST['add']))
 {
-$server="localhost";
-$username="root";
-$password="";
-$db="safar";
-$conn = mysqli_connect($server,$username,$password,$db);
+$server='localhost';
+$username='root';
+$password='';
+$db='safar';
+$conn = new mysqli($server,$username,$password,$db);
 if(!$conn){
     die("Connection failed".mysqli_connect_error());
 }
@@ -381,8 +381,8 @@ $name= $_POST["name"];
 $email= $_POST["email"];
 $locality= $_POST["locality"];
 $gender= $_POST["gender"];
-$sql="INSERT INTO customer(name,email,locality,gender) VALUES ('".$name."','".$email."','".$locality."','".$gender."')";
-if (conn->query($sql))
+$sql="INSERT INTO customer(name,email,locality,gender) VALUES (".$name.",".$email.",".$locality.",".$gender.")";
+if ($conn->query($sql))
 {
 echo "<script> alert('Account created') </script>";
 }
