@@ -400,7 +400,8 @@ echo $n;
 echo $e;
 echo $l;
 echo $g;
-$response= $conn->query ("INSERT INTO customer(name,email,locality,gender) VALUES ('$n','$e','$l','$g')");
+$conn->query ("INSERT INTO customer(name,email,locality,gender) VALUES ('$n','$e','$l','$g')");
+unset ($_POST['add']);
 }
 }
  ?>
