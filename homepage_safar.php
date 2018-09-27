@@ -199,7 +199,7 @@ input
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
       <div class= "navbar-header">
-        <button type= "button" class="navbar-toggle" data-toggle= "collapse" data-target= "#bs-safar-navbar-collapse-1">
+        <button type= "button" class="navbar-toggle" data-toggle= "collapse" data-tarPOST= "#bs-safar-navbar-collapse-1">
           <span class= "sr-only"> Toggle navigation </span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -288,7 +288,7 @@ input
         <div class= "bg-light text-dark">
           <div class= "panel panel-success">
       <div class= "panel-heading">
-        <h4 class= "panel-title"> Get Fare Estimate </h4>
+        <h4 class= "panel-title"> POST Fare Estimate </h4>
       </div> 
    
     <div class= "panel-body">
@@ -305,7 +305,7 @@ input
 </div>
 
 
-<button type="submit" class="btn btn-primary">Get Estimate</button>
+<button type="submit" class="btn btn-primary">POST Estimate</button>
 </form>
 </div>
 </div>
@@ -395,7 +395,12 @@ if($conn->connect_error){
 }
 else
 {
-$response= $conn->query ("INSERT INTO customer(name,email,locality,gender) VALUES ($n,$e,$l,$g)");
+echo 'successful';
+echo $n;
+echo $e;
+echo $l;
+echo $g;
+$response= $conn->query ("INSERT INTO customer(name,email,locality,gender) VALUES ('$n','$e','$l','$g')");
 }
 }
  ?>
