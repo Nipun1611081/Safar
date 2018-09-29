@@ -254,11 +254,11 @@ input
     <input type="text" class="form-control" id="locality" name="locality" placeholder="Address">
     <i class="glyphicon glyphicon-home form-control-feedback"></i>
   </div>
-  <div class="form-group has-feedback">
+<!--  <div class="form-group has-feedback">
     <label for="age">Age:</label>
     <input type="number" class="form-control" id="age" name="age" placeholder="age">
     <i class="glyphicon glyphicon-cloud form-control-feedback"></i>
-  </div>
+  </div> -->
 
 <label class="container">Male
   <input type="radio" checked="checked" name="radio" id="gender" value="male">
@@ -288,11 +288,11 @@ input
         <div class= "bg-light text-dark">
           <div class= "panel panel-success">
       <div class= "panel-heading">
-        <h4 class= "panel-title"> POST Fare Estimate </h4>
+        <h4 class= "panel-title"> Get Fare Estimate </h4>
       </div> 
    
     <div class= "panel-body">
-  <form id = "form2">
+ <!-- <form id = "form2">
     <div class="form-group has-feedback">
     <label for="source">Source:</label>
     <input type="text" class="form-control" id= "source" placeholder="Enter Source Location">
@@ -305,7 +305,9 @@ input
 </div>
 
 
-<button type="submit" class="btn btn-primary">POST Estimate</button>
+<button type="submit" class="btn btn-primary">Get Estimate</button>-->
+
+<a href="./source-distance-finder-google-maps.html">To get distance estimate click here</a>
 </form>
 </div>
 </div>

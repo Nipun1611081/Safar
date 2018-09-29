@@ -87,7 +87,38 @@
       <div class= "panel-heading">
         <h4 class= "panel-title" align="center"> Your Information </h4>
       </div> 
+<?php 
+$_SESSION['logged_user']=1;
+$server="localhost";
+$username="root";
+$password="";
+$db="safar";
+$t= $_SESSION['logged_user'];
+$conn = new mysqli($server,$username,$password,$db);
+if($conn->connect_error){
+    die("Connection failed".mysqli_connect_error());
+}
+  $result= $conn->query ("SELECT * FROM customer where cid = '$t'");
+  $row = $result->fetch_assoc();
+  $result1= $conn->query ("SELECT * FROM ride_details where cid = '$t' ORDER BY rid DESC LIMIT 1");
+  $row1 = $result1->fetch_assoc();
+  //echo mysqli_num_rows($result1);
+  /*if (mysqli_num_rows($result)>0)
+  {
+    $count= mysqli_num_rows($result);
+  }
+ while($row = $res1->fetch_assoc()) 
+{*/
 
+  $n = $row['name'];
+  $e = $row['email'];
+  $l = $row['locality'];
+  $g = $row['gender'];
+  $s = $row1['source'];
+  $d = $row1['destination'];
+//mysqli_close($conn);
+
+?>
     <div class= "panel panel-body detail">
       <img id="pholder" class= "center" src="./images/placeholder.png">
       <br>
