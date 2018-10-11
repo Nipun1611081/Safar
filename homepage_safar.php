@@ -209,20 +209,45 @@ input
     </div>
   <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
     <ul class= "nav navbar-nav">
-      <li> <a href="homepage_safar.html"> Home </a> </li>
-      <li> <a href="#"> Contacts </a> </li>
-      <li> <a href="about.html"> About </a> </li>
-       <li class="dropdown">
-        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"> <b class= "caret"></b>
-          Dropdown link
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-      </li>
-    </ul>
+        <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
+    <ul class= "nav navbar-nav">
+      <li> <a href="#"> Home </a> </li>
+      <li> <a href="./about.html"> About </a> </li>
+	  <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button> </li>
+   
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+    <form id = "form2" method="post" action="#">
+    <div class="form-group has-feedback">
+    <label for="username">Name:</label>
+    <input type="text" class="form-control" id= "username" placeholder="Username" name="username">
+    <i class="glyphicon glyphicon-map-marker form-control-feedback"></i>
+</div>
+      <div class="form-group has-feedback">
+    <label for="mail">Email id</label>
+    <input type="text" class="form-control" id= "mail" placeholder="mail" name="mail">
+    <i class="glyphicon glyphicon-map-marker form-control-feedback"></i>
+</div>
+<button type="submit" name="login" value="login" class="btn btn-primary">Login</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+   </ul>
     </div>  
   </div>
 </nav>
@@ -405,6 +430,43 @@ echo $g;
 $conn->query ("INSERT INTO customer(name,email,locality,gender) VALUES ('$n','$e','$l','$g')");
 unset ($_POST['add']);
 }
+}
+
+if (isset($_POST['login']))
+{
+	$server="localhost";
+$username="root";
+$password="";
+$db="safar";
+$conn = new mysqli($server,$username,$password,$db);
+if($conn->connect_error){
+    die("Connection failed".mysqli_connect_error());
+}
+else {
+	$u= $_POST["username"];
+	$e= $_POST["mail"];
+	$sql= "select * from customer where name='$u' AND email='$e' ";
+	$result= mysqli_query($conn, $sql);
+	$row = mysqli_fetch_assoc($result);
+	if (mysqli_num_rows($result)>0)
+    {
+		echo 'hello';
+		
+		$_SESSION['logged_user']= $row['cid'];
+		$qp= $_SESSION['logged_user'];
+		echo $qp;
+		header ("Location:first_page.php");
+		exit();
+	}	
+    else 
+    {
+		header ("Location:homepage_safar.php");
+		echo 'unsuccessful';
+		exit();
+	}		
+	unset ($_POST['login']);
+}
+
 }
  ?>
 

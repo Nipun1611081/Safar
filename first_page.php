@@ -62,19 +62,12 @@
     </div>
   <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
     <ul class= "nav navbar-nav">
-      <li> <a href="#"> Home </a> </li>
-      <li> <a href="#"> Contacts </a> </li>
-      <li> <a href="#"> About </a> </li>
-       <li class="dropdown">
-        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"> <b class= "caret"></b>
-          Dropdown link
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-      </li>
+       <ul class= "nav navbar-nav">
+      <li> <a href="./homepage_safar.php"> Home </a> </li>
+	  <li> <a href="./about.html"> About </a> </li>
+      <li> <a href="./homepage_safar.php"> Logout </a> </li>
+      
+    </ul>
     </ul>
     </div>  
   </div>
