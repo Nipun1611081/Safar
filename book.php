@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -72,7 +73,7 @@
     </div>
   <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
     <ul class= "nav navbar-nav">
-      <li> <a href="./homepage_safar.php"> Home </a> </li>
+      <li> <a href="./first_page.php"> Home </a> </li>
       <li> <a href="#"> About </a> </li>
 	  <li> <a href="./homepage_safar.php"> Logout </a> </li>
     </ul>
@@ -88,7 +89,7 @@
         <h4 class= "panel-title" align="center"> Your Information </h4>
       </div> 
 <?php 
-$_SESSION['logged_user']=1;
+//$_SESSION['logged_user']=1;
 $server="localhost";
 $username="root";
 $password="";
@@ -275,7 +276,7 @@ if($conn->connect_error){
 </footer>
 
 <?php
-$_SESSION['logged_user']=1;
+
 
 function randomName() {
     $names = array(

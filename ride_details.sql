@@ -4,6 +4,8 @@ CREATE TABLE `ride_details` (
   `dname` varchar(255) NOT NULL,
   `source` varchar(255) NOT NULL,
   `destination` varchar(255) NOT NULL,
+  `p_mode` varchar (255) NOT NULL,
+  `c_type` varchar (255) NOT NULL,
   `fare` int(20) NOT NULL,
   `ride_time` TIMESTAMP NOT NULL,
   PRIMARY KEY (`rid`)

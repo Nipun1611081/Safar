@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -434,6 +435,8 @@ unset ($_POST['add']);
 
 if (isset($_POST['login']))
 {
+  session_start();
+  $_SESSION['logged_user'];
 	$server="localhost";
 $username="root";
 $password="";
@@ -450,20 +453,18 @@ else {
 	$row = mysqli_fetch_assoc($result);
 	if (mysqli_num_rows($result)>0)
     {
-		echo 'hello';
-		
-		$_SESSION['logged_user']= $row['cid'];
-		$qp= $_SESSION['logged_user'];
-		echo $qp;
-		header ("Location:first_page.php");
-		exit();
-	}	
+       $_SESSION['logged_user']= $row['cid'];
+       echo '<script type="text/javascript">
+        window.location="http://localhost/safar/first_page.php";
+      </script>';
+
+     }	
     else 
     {
-		header ("Location:homepage_safar.php");
-		echo 'unsuccessful';
-		exit();
-	}		
+        echo '<script type="text/javascript">
+        window.location="http://localhost/safar/homepage_safar.php";
+      </script>'; 
+	  }		
 	unset ($_POST['login']);
 }
 

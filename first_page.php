@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -63,7 +64,7 @@
   <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
     <ul class= "nav navbar-nav">
        <ul class= "nav navbar-nav">
-      <li> <a href="./homepage_safar.php"> Home </a> </li>
+      <li> <a href="./first_page.php"> Home </a> </li>
 	  <li> <a href="./about.html"> About </a> </li>
       <li> <a href="./homepage_safar.php"> Logout </a> </li>
       
@@ -81,7 +82,8 @@
         <h4 class= "panel-title" align="center"> Your Information </h4>
       </div> 
 <?php 
-$_SESSION['logged_user']=1;
+//$_SESSION['logged_user']=1;
+//session_start();
 $server="localhost";
 $username="root";
 $password="";
@@ -109,6 +111,7 @@ if($conn->connect_error){
   $g = $row['gender'];
   $s = $row1['source'];
   $d = $row1['destination'];
+
 //mysqli_close($conn);
 
 ?>
@@ -134,13 +137,14 @@ if($conn->connect_error){
       </tr>
 
       <tr>
-         <td align="center">Latest Trip: <?php echo " $s to $d  "; mysqli_close ($conn);?></td>
+         <td align="center">Latest Trip: <?php echo " $s to $d  ";?></td>
       </tr>
    </table>
    <br>
    <br>
    <div class= "wrapper">
-   <button class= "btn btn-success" name="book" align= "center"> Book a Cab </button> 
+   <button onclick="location.href='http://localhost/safar/book.php'" type="button" class="btn btn-success" value="book">
+     Book a cab</button>
    </div>
 
       </div>
@@ -164,18 +168,24 @@ if($conn->connect_error){
       </tr>
     </thead>
     <tbody>
+      <?php
+      $result2;
+      $sql2= "SELECT * FROM ride_details where cid = '$t'";
+      $result2 = mysqli_query ($conn,$sql2);
+  while ($row2 = mysqli_fetch_assoc($result2))
+  {
+    $dn = $row2['dname'];
+  $sc = $row2['source'];
+  $ds = $row2['destination'];
+  $fr = $row2['fare'];
+  ?>
       <tr>
-        <td>Gangadhar</td>
-        <td>Thane</td>
-        <td>Ghatkopar</td>
-        <td>300.0</td>
+        <td><?php echo "$dn"; ?></td>
+        <td><?php echo "$sc"; ?></td>
+        <td><?php echo "$ds"; ?></td>
+        <td><?php echo "$fr"; ?></td>
       </tr>
-       <tr>
-        <td>Gangadhar</td>
-        <td>Thane</td>
-        <td>Ghatkopar</td>
-        <td>300.0</td>
-      </tr>
+   <?php } ?>   
     </tbody>
   </table>
 
