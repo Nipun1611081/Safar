@@ -325,6 +325,9 @@ echo $driver;*/
 $user= $_SESSION['logged_user'];
 $conn->query ("INSERT INTO ride_details(cid,source,destination,p_mode,c_type,fare,dname,ride_time) VALUES ('$user','$s','$d','$p','$m','$fare','$driver',CURRENT_TIMESTAMP())");
 mysqli_close($conn);
+  echo '<script type="text/javascript">
+        window.location="http://localhost/safar/first_page.php";
+      </script>'; 
 unset ($_POST['add']);
 }
 }
