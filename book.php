@@ -219,11 +219,12 @@ if($conn->connect_error){
       <div class="panel-heading">Latest Discount and Offers!</div>
       <div class="panel-body notice">
               <ul>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> NEW50 (Use this code if you are a new user, valid upto 3 trips) </li>
+          <li> Mumbai100 (applicable in only Mumbai region , 100/- RS flat off) </li>
+          <li> India25 (valid all over India, flat 25/- RS off on the next 10 trips) </li>
+          <li> Far1000(avail a discount of 1000RS/- if you ride to an outstation)</li>
+          <li> Happy Hours (Ride between 2pm-5pm) 
+          use the code happy100 to get a 100 RS/- discount </li>
          </ul> 
       </div>
     </div>
@@ -239,28 +240,28 @@ if($conn->connect_error){
 <div class="container-fluid">
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/doorstep.jpg">  
+  <img id="photo" src="./images/mini.jpg">  
   <h2>Safar Mini</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  <p>Safar Mini is the smallest yet most dearest child that will ensure that you'll have a comfortable ride.</p>
 </div>
 </div>
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/doorstep.jpg">  
+  <img id="photo" src="./images/micro.jpg">  
   <h2>Safar Micro</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  <p>Sturdy, smooth, and efficient, that is what Safar Micro offers you everytime.</p>
 </div>
 </div>
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/doorstep.jpg">  
+  <img id="photo" src="./images/SUV.jpg">  
   <h2>Safar XUV</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  <p>Avail the most luxurious member of our fleet that'll glide to give you an experience like never before.</p>
 </div>
 </div>
 <div class="col-md-3" >
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/doorstep.jpg">  
+  <img id="photo" src="./images/AUTO.jpg">  
   <h2>Safar Auto</h2>
   <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
 </div>

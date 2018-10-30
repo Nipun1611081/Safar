@@ -1,4 +1,4 @@
-<?php session_start(); ?>
++<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -184,6 +184,13 @@ input
 	padding-left: 20px;
 }
 
+#photo1 {
+  max-height: 300px;
+  max-width: 250px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 #adv {
 	border-left: 6px solid white ;
 }
@@ -346,13 +353,13 @@ input
       <div class="panel-heading">Latest Discount and Offers!</div>
       <div class="panel-body notice">
               <ul>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> NEW50 (Use this code if you are a new user, valid upto 3 trips) </li>
+          <li> Mumbai100 (applicable in only Mumbai region , 100/- RS flat off) </li>
+          <li> India25 (valid all over India, flat 25/- RS off on the next 10 trips) </li>
+          <li> Far1000(avail a discount of 1000RS/- if you ride to an outstation)</li>
+          <li> Happy Hours (Ride between 2pm-5pm) 
+          use the code happy100 to get a 100 RS/- discount </li>
+
          </ul> 
       </div>
     </div>
@@ -369,30 +376,30 @@ input
 <div class="container-fluid">
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/doorstep.jpg">	
-  <h2>London</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  <img id="photo" src="./images/Teen Driver4.jpg">	
+  <h2>Cooperation</h2>
+  <p>We, at Safar are always at our footsteps to cater to our customers.</p>
 </div>
 </div>
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
   <img id="photo" src="./images/doorstep.jpg">	
-  <h2>London</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  <h2>24 hour service</h2>
+  <p>We at safar INC. vow to provide you a 24 hr service always</p>
 </div>
 </div>
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/doorstep.jpg">	
-  <h2>London</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  <img id="photo" src="./images/discounts.jpg">	
+  <h2>Discounts</h2>
+  <p>Amazing discounts available 24/7 & always applicable</p>
 </div>
 </div>
 <div class="col-md-3" >
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/doorstep.jpg">	
-  <h2>London</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  <img id="photo" src="./images/connectivity.jpg">	
+  <h2>Different facilities</h2>
+  <p>all types of ride types micro , mini ,luxury is available that'll ensure your hassle free commute.</p>
 </div>
 </div>
 </div>
