@@ -65,7 +65,7 @@
     <ul class= "nav navbar-nav">
        <ul class= "nav navbar-nav">
       <li> <a href="./first_page.php"> Home </a> </li>
-
+	<li> <a href="./about.html"> About </a> </li>
       <li> <a href="./homepage_safar.php"> Logout </a> </li>
       
     </ul>
