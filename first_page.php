@@ -14,6 +14,10 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
 <style>
 .detail
 {
@@ -65,7 +69,7 @@
     <ul class= "nav navbar-nav">
        <ul class= "nav navbar-nav">
       <li> <a href="./first_page.php"> Home </a> </li>
-	<li> <a href="./about.html"> About </a> </li>
+	  <li> <a href="./about.html"> About </a> </li>
       <li> <a href="./homepage_safar.php"> Logout </a> </li>
       
     </ul>
@@ -153,6 +157,12 @@ if($conn->connect_error){
 <!-- end of generic info-->
 <div class="col-md-8">
   <div class="panel panel-success">
+  	<input type="text" id="search" placeholder="Search" />
+    <!-- Suggestions will be displayed in below div. -->
+
+
+   <div id="display"></div>'
+   '
     <div class="panel-heading" align="center"><b>Ride Details</b></div>
     <h3 align="center">Ride History</h3>
     <div class="panel-body log">

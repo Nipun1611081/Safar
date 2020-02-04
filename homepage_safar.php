@@ -1,4 +1,4 @@
-+<?php session_start(); ?>
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,8 +16,6 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 
 <style>
 
@@ -184,13 +182,6 @@ input
 	padding-left: 20px;
 }
 
-#photo1 {
-  max-height: 300px;
-  max-width: 250px;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
 #adv {
 	border-left: 6px solid white ;
 }
@@ -353,17 +344,21 @@ input
       <div class="panel-heading">Latest Discount and Offers!</div>
       <div class="panel-body notice">
               <ul>
-          <li> NEW50 (Use this code if you are a new user, valid upto 3 trips) </li>
-          <li> Mumbai100 (applicable in only Mumbai region , 100/- RS flat off) </li>
-          <li> India25 (valid all over India, flat 25/- RS off on the next 10 trips) </li>
-          <li> Far1000(avail a discount of 1000RS/- if you ride to an outstation)</li>
-          <li> Happy Hours (Ride between 2pm-5pm) 
-          use the code happy100 to get a 100 RS/- discount </li>
-
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis vulputate diam, et congue nibh lacinia vel. Pellentesque tempus nunc. </li>
          </ul> 
       </div>
     </div>
    </div>
+
+   <!--RSS feeds-->
+<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:750px;background-color:#FFFFFF; border:1px solid #333333;"><div id="rsswidget" style="height:500px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1580286447166&amp;x=https%3A%2F%2Ftimesofindia.indiatimes.com%2Frssfeeds%2F49896634.cms&amp;w=750&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=FFFFFF&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=FFFFFF&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:750px; height:500px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:1px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
+   <!--RSS ends-->
    <div class="container-fluid">
    	<div class="col-md-12">
    		<div class= "jumbotron" align="center">
@@ -376,30 +371,30 @@ input
 <div class="container-fluid">
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/Teen Driver4.jpg">	
-  <h2>Cooperation</h2>
-  <p>We, at Safar are always at our footsteps to cater to our customers.</p>
+  <img id="photo" src="./images/doorstep.jpg">	
+  <h2>London</h2>
+  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
 </div>
 </div>
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
   <img id="photo" src="./images/doorstep.jpg">	
-  <h2>24 hour service</h2>
-  <p>We at safar INC. vow to provide you a 24 hr service always</p>
+  <h2>London</h2>
+  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
 </div>
 </div>
 <div class="col-md-3">
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/discounts.jpg">	
-  <h2>Discounts</h2>
-  <p>Amazing discounts available 24/7 & always applicable</p>
+  <img id="photo" src="./images/doorstep.jpg">	
+  <h2>London</h2>
+  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
 </div>
 </div>
 <div class="col-md-3" >
 <div class="w3-container w3-2018-sailor-blue w3-hover-black w3-animate-bottom" id="adv">
-  <img id="photo" src="./images/connectivity.jpg">	
-  <h2>Different facilities</h2>
-  <p>all types of ride types micro , mini ,luxury is available that'll ensure your hassle free commute.</p>
+  <img id="photo" src="./images/doorstep.jpg">	
+  <h2>London</h2>
+  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
 </div>
 </div>
 </div>

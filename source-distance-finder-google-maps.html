@@ -222,9 +222,7 @@
 		var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
 		var d = R * c;
 		
-		document.getElementById("distance_direct").innerHTML = "The distance between the two points (in a straight line) is: "+d;
-
-		document.getElementById("fair_estimate").innerHTML = "The estimate fair amount is: "+(d*18);
+		document.getElementById("distance_direct").innerHTML = "<br/>The distance between the two points (in a straight line) is: "+d;
 	}
 	
 	function toRad(deg) 
@@ -238,10 +236,9 @@
 <body style="background-color: powderblue;">
 <!--header-->
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
       <div class= "navbar-header">
-        <button type= "button" class="navbar-toggle" data-toggle= "collapse" data-tarPOST= "#bs-safar-navbar-collapse-1">
+        <button type= "button" class="navbar-toggle" data-toggle= "collapse" data-target= "#bs-safar-navbar-collapse-1">
           <span class= "sr-only"> Toggle navigation </span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -251,45 +248,20 @@
     </div>
   <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
     <ul class= "nav navbar-nav">
-        <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
-    <ul class= "nav navbar-nav">
-      <li> <a href="./homepage_safar.php"> Home </a> </li>
-      <li> <a href="./about.html"> About </a> </li>
-	  <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button> </li>
-   
-    <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Login</h4>
-      </div>
-      <div class="modal-body">
-    <form id = "form2" method="post" action="#">
-    <div class="form-group has-feedback">
-    <label for="username">Name:</label>
-    <input type="text" class="form-control" id= "username" placeholder="Username" name="username">
-    <i class="glyphicon glyphicon-map-marker form-control-feedback"></i>
-</div>
-      <div class="form-group has-feedback">
-    <label for="mail">Email id</label>
-    <input type="text" class="form-control" id= "mail" placeholder="mail" name="mail">
-    <i class="glyphicon glyphicon-map-marker form-control-feedback"></i>
-</div>
-<button type="submit" name="login" value="login" class="btn btn-primary">Login</button>
-</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-   </ul>
+      <li> <a href="homepage_safar.html"> Home </a> </li>
+      <li> <a href="#"> Contacts </a> </li>
+      <li> <a href="about.html"> About </a> </li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"> <b class= "caret"></b>
+          Dropdown link
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+      </li>
+    </ul>
     </div>  
   </div>
 </nav>
@@ -304,11 +276,11 @@
 				<td colspan="7">&nbsp;</td>
 			</tr>
 			<tr>
-				<td>Source:</td>
+				<td>First address:</td>
 				<td>&nbsp;</td>
 				<td><input type="text" name="address1" id="address1" size="50"/></td>
 				<td>&nbsp;</td>
-				<td>Destination:</td>
+				<td>Second address:</td>
 				<td>&nbsp;</td>
 				<td><input type="text" name="address2" id="address2" size="50"/></td>
 			</tr>
@@ -322,8 +294,6 @@
 	</div>
 	<center><div style="width:100%; height:10%" id="distance_direct"></div></center>
 	<center><div style="width:100%; height:10%" id="distance_road"></div></center>
-
-	<center><div style="width:100%; height:10%" id="fair_estimate"></div></center>
 	
 	<center><div id="map_canvas" style="width:70%; height:54%"></div></center>
 </body>
