@@ -157,6 +157,7 @@ if($conn->connect_error){
 <!-- end of generic info-->
 <div class="col-md-8">
   <div class="panel panel-success">
+    <div class="panel-heading" align="center"><b>Your Location</b></div>
   	<input type="text" id="search" placeholder="Search" />
     <!-- Suggestions will be displayed in below div. -->
 

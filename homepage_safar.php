@@ -214,6 +214,7 @@ input
     <ul class= "nav navbar-nav">
       <li> <a href="#"> Home </a> </li>
       <li> <a href="./about.html"> About </a> </li>
+      <li> <a href="./rss.html"> Latest news </a> </li>
 	  <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button> </li>
    
     <div id="myModal" class="modal fade" role="dialog">
@@ -357,7 +358,7 @@ input
    </div>
 
    <!--RSS feeds-->
-<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:750px;background-color:#FFFFFF; border:1px solid #333333;"><div id="rsswidget" style="height:500px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1580286447166&amp;x=https%3A%2F%2Ftimesofindia.indiatimes.com%2Frssfeeds%2F49896634.cms&amp;w=750&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=FFFFFF&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=FFFFFF&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:750px; height:500px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:1px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
+<!--<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:750px;background-color:#FFFFFF; border:1px solid #333333;"><div id="rsswidget" style="height:500px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1580286447166&amp;x=https%3A%2F%2Ftimesofindia.indiatimes.com%2Frssfeeds%2F49896634.cms&amp;w=750&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=FFFFFF&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=FFFFFF&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:750px; height:500px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:1px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>-->
    <!--RSS ends-->
    <div class="container-fluid">
    	<div class="col-md-12">
